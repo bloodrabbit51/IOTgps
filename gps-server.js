@@ -13,20 +13,12 @@ var config = require('./modules/config');
 var parser = require('./modules/parsing/parser');
 var nodeadmin = require('nodeadmin');
 var mysql      = require('mysql');
-//var connection = mysql.createConnection({
-//  host     : 'localhost',
-//  user     : 'root',
-//  password : 'shamim123',
-//  database : 'general'
-//});
-//connection.connect();
 
-//app.use(nodeadmin(app));
-/**
- * Function to run gps-server outside.
+/* Function to run gps-server outside.
  *
  * @returns {events.EventEmitter} provides 'extension point' for handling GPS data outside.
  */
+
 module.exports = function() {
 
     var em = new events.EventEmitter();
